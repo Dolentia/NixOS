@@ -199,7 +199,7 @@
             };
 
             "network" = {
-              # on-click = "nm-connection-editor";
+              on-click = "nm-connection-editor";
               # "interface" = "wlp2*"; # (Optional) To force the use of this interface
               format-wifi = "󰤨 Wi-Fi";
               # format-wifi = " {bandwidthDownBits}  {bandwidthUpBits}";
