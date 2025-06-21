@@ -50,7 +50,7 @@
       username = "keder"; # automatically set with install.sh and live-install.sh
       editor = "vscode"; # nixvim, vscode, nvchad, neovim, emacs (WIP)
       browser = "firefox"; # firefox, floorp, zen
-      terminal = "Alacritty"; # kitty, alacritty, wezterm
+      terminal = "alacritty"; # kitty, alacritty, wezterm
       terminalFileManager = "yazi"; # yazi or lf
       sddmTheme = "jake_the_dog"; # astronaut, black_hole, purple_leaves, jake_the_dog, hyprland_kath
       wallpaper = "kurzgesagt"; # see modules/themes/wallpapers
