@@ -32,7 +32,7 @@
     ../../modules/programs/cli/btop
     ../../modules/programs/shell/bash
     ../../modules/programs/shell/zsh
-    ../../modules/programs/media/equibop
+    #../../modules/programs/media/equibop
     # ../../modules/programs/media/youtube-music
     # ../../modules/programs/media/thunderbird
     # ../../modules/programs/media/obs-studio
