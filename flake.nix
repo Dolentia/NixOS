@@ -50,19 +50,20 @@
       username = "keder"; # automatically set with install.sh and live-install.sh
       editor = "vscode"; # nixvim, vscode, nvchad, neovim, emacs (WIP)
       browser = "firefox"; # firefox, floorp, zen
-      terminal = "alacritty"; # kitty, alacritty, wezterm
+      terminal = "kitty"; # kitty, alacritty, wezterm
       terminalFileManager = "yazi"; # yazi or lf
       sddmTheme = "jake_the_dog"; # astronaut, black_hole, purple_leaves, jake_the_dog, hyprland_kath
       wallpaper = "kurzgesagt"; # see modules/themes/wallpapers
 
       # System configuration
-      videoDriver = "amdgpu"; # CHOOSE YOUR GPU DRIVERS (nvidia, amdgpu or intel)
-      hostname = "keder"; # CHOOSE A HOSTNAME HERE
+      videoDriver = "      videoDriver = "nvidia"; # CHOOSE YOUR GPU DRIVERS (nvidia, amdgpu or intel)
+"; # CHOOSE YOUR GPU DRIVERS (nvidia, amdgpu or intel)
+      hostname = "keder-nixos"; # CHOOSE A HOSTNAME HERE
       locale = "en_GB.UTF-8"; # CHOOSE YOUR LOCALE
       timezone = "Europe/Berlin"; # CHOOSE YOUR TIMEZONE
-      kbdLayout = "en"; # CHOOSE YOUR KEYBOARD LAYOUT
+      kbdLayout = "us"; # CHOOSE YOUR KEYBOARD LAYOUT
       kbdVariant = "extd"; # CHOOSE YOUR KEYBOARD VARIANT (Can leave empty)
-      consoleKeymap = "en"; # CHOOSE YOUR CONSOLE KEYMAP (Affects the tty?)
+      consoleKeymap = "us"; # CHOOSE YOUR CONSOLE KEYMAP (Affects the tty?)
     };
 
     systems = [
