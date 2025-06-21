@@ -29,18 +29,6 @@
             image_quality = 90;
           };
         };
-        keymap = {
-          manager.prepend_keymap = [
-            {
-              on = ["e"];
-              run = "open";
-            }
-            {
-              on = ["d"];
-              run = "remove --force";
-            }
-          ];
-        };
         theme = {
           manager = {
             border_symbol = " ";
