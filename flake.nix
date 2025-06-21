@@ -56,8 +56,7 @@
       wallpaper = "kurzgesagt"; # see modules/themes/wallpapers
 
       # System configuration
-      videoDriver = "      videoDriver = "nvidia"; # CHOOSE YOUR GPU DRIVERS (nvidia, amdgpu or intel)
-"; # CHOOSE YOUR GPU DRIVERS (nvidia, amdgpu or intel)
+      videoDriver = "amdgpu"; # CHOOSE YOUR GPU DRIVERS (nvidia, amdgpu or intel)
       hostname = "keder-nixos"; # CHOOSE A HOSTNAME HERE
       locale = "en_GB.UTF-8"; # CHOOSE YOUR LOCALE
       timezone = "Europe/Berlin"; # CHOOSE YOUR TIMEZONE
