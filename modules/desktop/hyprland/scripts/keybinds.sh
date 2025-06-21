@@ -37,7 +37,7 @@ yad \
   --timeout-indicator=bottom \
   "SUPER Return" "Launch terminal" "$_terminal" \
   "SUPER T" "Launch terminal" "$_terminal" \
-  "SUPER E" "Launch file manager" "$_terminal_FM" \
+  "SUPER E" "Launch file manager" "thunar" \
   "SUPER F" "Launch browser" "$_browser" \
   "SUPER SHIFT S" "Launch spotify" "spotify" \
   "CTRL ALT Delete" "Open system monitor" "$_terminal -e 'btop'" \
