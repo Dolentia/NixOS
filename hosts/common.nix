@@ -181,7 +181,7 @@
       enableHidpi = true;
       package = pkgs.kdePackages.sddm;
       theme = "sddm-astronaut-theme";
-      settings.Theme.CursorTheme = "Bibata-Modern-Classic";
+      settings.Theme.CursorTheme = "Bibata-Modern-Ice";
       extraPackages = with pkgs; [
         kdePackages.qtmultimedia
         kdePackages.qtsvg
