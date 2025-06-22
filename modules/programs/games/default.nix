@@ -13,12 +13,14 @@
     enable = true;
     enable32Bit = true;
   };
+
+  # i think im supposed to add games i want here 👍
   environment.systemPackages = with pkgs; [
     lutris
     heroic
     # bottles
     # ryujinx
-    # prismlauncher
+    prismlauncher
 
     steam-run
     wineWowPackages.staging
