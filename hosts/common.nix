@@ -49,6 +49,14 @@
         extraPortals = with pkgs; [ xdg-desktop-portal-hyprland xdg-desktop-portal-gtk ];
         xdgOpenUsePortal = true;
       };
+
+      xdg.mimeApps = {
+        enable = true;
+          defaultApplications = {
+            "inode/directory" = "thunar.desktop";
+          };
+      };
+
       home.username = username;
       home.homeDirectory =
         if pkgs.stdenv.isDarwin
