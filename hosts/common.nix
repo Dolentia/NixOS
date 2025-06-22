@@ -195,6 +195,9 @@
 
   # Enable CUPS to print documents.
   services.printing.enable = true;
+  
+  # setup flatpak
+  services.flatpak.enable = true;
 
   # Enable sound with pipewire.
   services.pulseaudio.enable = false;
