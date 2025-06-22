@@ -49,7 +49,8 @@
   in [
     ({...}: {
       home.packages = with pkgs; [
-        hyprpaper
+        swww
+        waypaper
         hyprpicker
         cliphist
         grimblast
@@ -111,12 +112,10 @@
             "NIXPKGS_ALLOW_UNFREE,1"
           ];
           exec-once = [
-            #"[workspace 1 silent] ${terminal}"
-            #"[workspace 5 silent] ${browser}"
-            #"[workspace 6 silent] spotify"
-            #"[workspace special silent] ${browser} --private-window"
-            #"[workspace special silent] ${terminal}"
+            "[workspace 1 silent] ${browser}"
+            "[workspace 2 silent] discord"
 
+            "waypaper --restore"
             "waybar"
             "swaync"
             "nm-applet --indicator"
@@ -383,7 +382,8 @@
               # Applications/Programs
               "$mainMod, Return, exec, $term"
               "$mainMod, T, exec, $term"
-              "$mainMod, E, exec, $fileManager"
+              "$mainMod, E, exec, thunar"
+              "$mainMod, X, exec, waypaper"
               "$mainMod, C, exec, $editor"
               "$mainMod, F, exec, $browser"
               "$mainMod SHIFT, S, exec, spotify"

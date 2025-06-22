@@ -1,6 +1,5 @@
 {
   pkgs,
-  wallpaper,
   ...
 }: let
   variant = "mocha";
@@ -38,15 +37,6 @@ in {
         };
         gtk4.extraConfig = {
           "gtk-application-prefer-dark-theme" = "1";
-        };
-      };
-
-      # Set wallpaper
-      services.hyprpaper = {
-        enable = true;
-        settings = {
-          preload = ["${../wallpapers/${wallpaper}.jxl}"];
-          wallpaper = [",${../wallpapers/${wallpaper}.jxl}"];
         };
       };
 

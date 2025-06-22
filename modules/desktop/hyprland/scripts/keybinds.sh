@@ -21,6 +21,7 @@ get_nix_value() {
 
 
 _browser=$(get_nix_value "browser =")
+_editor=$(get_nix_value "default_editor =")
 _terminal=$(get_nix_value "terminal =")
 _terminal_FM=$(get_nix_value "terminalFileManager =")
 
@@ -38,6 +39,8 @@ yad \
   "SUPER Return" "Launch terminal" "$_terminal" \
   "SUPER T" "Launch terminal" "$_terminal" \
   "SUPER E" "Launch file manager" "thunar" \
+  "SUPER X" "Launch Waypaper" "waypaper" \
+  "SUPER C" "Launch Editor" "$_editor" \
   "SUPER F" "Launch browser" "$_browser" \
   "SUPER SHIFT S" "Launch spotify" "spotify" \
   "CTRL ALT Delete" "Open system monitor" "$_terminal -e 'btop'" \

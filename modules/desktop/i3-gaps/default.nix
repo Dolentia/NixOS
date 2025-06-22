@@ -66,7 +66,7 @@
               notification = false;
             }
             {
-              command = "${pkgs.feh}/bin/feh --bg-fill --no-fehbg ${../../themes/wallpapers/escape_velocity.jxl}";
+              command = "${pkgs.feh}/bin/feh --bg-fill --no-fehbg ${../../themes/SystemPapers/escape_velocity.jxl}";
               always = false;
               notification = false;
             }

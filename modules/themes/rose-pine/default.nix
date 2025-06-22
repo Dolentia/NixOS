@@ -1,6 +1,5 @@
 {
   pkgs,
-  wallpaper,
   ...
 }: let
   # Choose the desired variant: "main", "moon", or "dawn"
@@ -54,15 +53,6 @@ in {
       xdg.dataFile."Kvantum/${kvantumThemeName}".source = kvantumThemeDir;
       xdg.configFile."Kvantum/kvantum.kvconfig".source = (pkgs.formats.ini {}).generate "kvantum.kvconfig" {
         General.theme = kvantumThemeName;
-      };
-
-      # Wallpaper configuration
-      services.hyprpaper = {
-        enable = true;
-        settings = {
-          preload = ["${../wallpapers/${wallpaper}}"];
-          wallpaper = [",${../wallpapers/${wallpaper}}"];
-        };
       };
 
       # GNOME dark mode
