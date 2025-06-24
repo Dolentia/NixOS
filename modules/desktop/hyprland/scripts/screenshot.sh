@@ -1,33 +1,43 @@
 #!/usr/bin/env bash
-set -euo pipefail
 
-pkill -x swappy 2>/dev/null || true
+swpy_dir="${XDG_CONFIG_HOME:-$HOME/.config}/swappy"
+XDG_PICTURES_DIR="${XDG_PICTURES_DIR:-$HOME/Pictures}"
+save_dir="${XDG_PICTURES_DIR}/Screenshots"
+save_file="$(date +'%y%m%d_%Hh%Mm%Ss_screenshot.png')"
 
-for cmd in grimblast swappy wl-copy notify-send; do
+mkdir -p "$save_dir"
+mkdir -p "$swpy_dir"
+echo -e "[Default]\nsave_dir=$save_dir\nsave_filename_format=$save_file" > "$swpy_dir/config"
+
+# Ensure required binaries
+for cmd in grimblast swappy notify-send; do
     command -v "$cmd" >/dev/null 2>&1 || { echo "$cmd not found"; exit 1; }
 done
 
-usage() {
-    printf "Usage: %s {p|s|sf|m}\n" "$(basename "$0")"
-    printf "  p  : copy all screens\n"
-    printf "  s  : snip area\n"
-    printf "  sf : snip area (freeze)\n"
-    printf "  m  : copy focused monitor\n"
+# Kill existing swappy (if running)
+pkill -x swappy 2>/dev/null || true
+
+print_error() {
+    cat << EOF
+Usage: $(basename "$0") <action>
+Valid actions:
+  p  : Print all screens
+  s  : Snip current screen
+  sf : Snip current screen (frozen)
+  m  : Print focused monitor
+EOF
     exit 1
 }
 
-case "${1-}" in
-    p) grim=(grimblast save screen -)  ;;
-    s) grim=(grimblast save area  -)   ;;
-    sf) grim=(grimblast --freeze save area -) ;;
-    m) grim=(grimblast save output -)  ;;
-    *) usage ;;
+case "$1" in
+    p)  grimblast save screen - | swappy -f - ;;
+    s)  grimblast save area - | swappy -f - ;;
+    sf) grimblast --freeze save area - | swappy -f - ;;
+    m)  grimblast save output - | swappy -f - ;;
+    *)  print_error ;;
 esac
 
-(
-    "${grim[@]}" \
-    | swappy -f - -o - \
-    | wl-copy --type image/png
-) & disown
-
-notify-send -a Screenshot -r 91190 -t 2200 "Screenshot copied to clipboard"
+# Notify if saved
+if [ -f "${save_dir}/${save_file}" ]; then
+    notify-send -a Screenshot -r 91190 -t 2200 -i "${save_dir}/${save_file}" "Saved in ${save_dir}"
+fi
