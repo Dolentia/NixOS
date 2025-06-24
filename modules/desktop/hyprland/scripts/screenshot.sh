@@ -17,7 +17,7 @@ EOF
 
 case "$1" in
     s)  grimblast copy area ;;
-    sf) grimblast --freeze copy area ;;
+    sf) grimblast --freeze copy output ;;
     *)  print_error ;;
 esac
 
