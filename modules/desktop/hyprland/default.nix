@@ -406,9 +406,7 @@
 
               # Screenshot/Screencapture
               "$mainMod, P, exec, ${./scripts/screenshot.sh} s" # drag to snip an area / click on a window to print it
-              "$mainMod CTRL, P, exec, ${./scripts/screenshot.sh} sf" # frozen screen, drag to snip an area / click on a window to print it
-              "$mainMod, print, exec, ${./scripts/screenshot.sh} m" # print focused monitor
-              "$mainMod ALT, P, exec, ${./scripts/screenshot.sh} p" # print all monitor outputs
+              "$mainMod SHIFT, P, exec, ${./scripts/screenshot.sh} sf" # frozen screen, drag to snip an area / click on a window to print it
 
               # Functional keybinds
               ",xf86Sleep, exec, systemctl suspend" # Put computer into sleep mode

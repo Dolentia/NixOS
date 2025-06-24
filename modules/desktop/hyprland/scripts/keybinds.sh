@@ -89,8 +89,6 @@ yad \
   "SUPER M" "Online music" "scripts/rofimusic.sh" \
   "SUPER P" "Screenshot (select area)" "scripts/screenshot.sh s" \
   "SUPER CTRL P" "Screenshot (frozen screen)" "scripts/screenshot.sh sf" \
-  "SUPER Print" "Screenshot (current monitor)" "scripts/screenshot.sh m" \
-  "SUPER ALT P" "Screenshot (all monitors)" "scripts/screenshot.sh p" \
   "SUPER SHIFT CTRL ←" "Move window left" "movewindow l" \
   "SUPER SHIFT CTRL →" "Move window right" "movewindow r" \
   "SUPER SHIFT CTRL ↑" "Move window up" "movewindow u" \
