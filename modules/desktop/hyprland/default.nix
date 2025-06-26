@@ -306,6 +306,7 @@
             "tag +games, class:^(steam_app.*|steam_app_\d+)$"
             "tag +games, class:^(gamescope)$"
             "tag +games, class:(Waydroid)"
+            "tag +games, class:(Minecraft)"
             "tag +games, class:(osu!)"
 
             # Games
@@ -374,7 +375,7 @@
               "$mainMod, delete, exit" # kill hyperland session
               "$mainMod, W, togglefloating" # toggle the window on focus to float
               "$mainMod SHIFT, G, togglegroup" # toggle the window on focus to float
-              "ALT, return, fullscreen" # toggle the window on focus to fullscreen
+              "$mainMod, SHIFT, F, fullscreen" # toggle the window on focus to fullscreen
               "$mainMod ALT, L, exec, hyprlock" # lock screen
               "$mainMod, backspace, exec, pkill -x wlogout || wlogout -b 4" # logout menu
               "$CONTROL, ESCAPE, exec, pkill waybar || waybar" # toggle waybar

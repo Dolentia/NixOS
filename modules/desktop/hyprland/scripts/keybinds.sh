@@ -72,7 +72,7 @@ yad \
   "SUPER Delete" "Exit Hyprland session" "exit" \
   "SUPER W" "Toggle floating window" "togglefloating" \
   "SUPER SHIFT G" "Toggle window group" "togglegroup" \
-  "ALT Return" "Toggle fullscreen" "fullscreen" \
+  "SUPER Shift F"" "Toggle fullscreen" "fullscreen" \
   "SUPER ALT L" "Lock screen" "hyprlock" \
   "SUPER Backspace" "Power menu" "wlogout -b 4" \
   "CTRL Escape" "Toggle Waybar" "pkill waybar || waybar" \
