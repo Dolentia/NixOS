@@ -57,7 +57,6 @@
           };
       };
 
-      home.backupFileExtension = "backup";
       home.username = username;
       home.homeDirectory =
         if pkgs.stdenv.isDarwin
