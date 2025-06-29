@@ -52,8 +52,6 @@
         # pokego # Overlayed
         # krita
         github-desktop
-        gcc
-        glibc
         python3
         # gimp
       ];
