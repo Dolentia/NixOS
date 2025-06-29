@@ -58,7 +58,6 @@
         # gimp
       ];
 
-      home-manager.backupFileExtension = "backup";
     })
   ];
 
