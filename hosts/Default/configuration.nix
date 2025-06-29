@@ -57,6 +57,8 @@
         python3
         # gimp
       ];
+
+      home-manager.backupFileExtension = "backup";
     })
   ];
 
