@@ -43,8 +43,6 @@
       # Let Home Manager install and manage itself.
       programs.home-manager.enable = true;
 
-      home-manager.backupFileExtension = "backup";
-
       xdg.enable = true;
       xdg.portal = {
         enable = true;
@@ -59,6 +57,7 @@
           };
       };
 
+      home.backupFileExtension = "backup";
       home.username = username;
       home.homeDirectory =
         if pkgs.stdenv.isDarwin
