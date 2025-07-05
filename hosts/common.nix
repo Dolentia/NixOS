@@ -58,10 +58,6 @@
           };
       };
 
-      xdg.exoPreferredApplications = {
-         terminal = "${terminal}.desktop";
-      };
-
       home.username = username;
       home.homeDirectory =
         if pkgs.stdenv.isDarwin
@@ -261,6 +257,7 @@
     XDG_CONFIG_HOME = "$HOME/.config";
     XDG_DATA_HOME = "$HOME/.local/share";
     XDG_BIN_HOME = "$HOME/.local/bin";
+    TERMINAL = "${terminal}";
 
     templates = "${self}/dev-shells";
   };
