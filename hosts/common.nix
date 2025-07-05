@@ -60,7 +60,7 @@
 
       xdg.exoPreferredApplications = {
          terminal = "${terminal}.desktop";
-      }
+      };
 
       home.username = username;
       home.homeDirectory =
