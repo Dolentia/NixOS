@@ -50,10 +50,12 @@
         xdgOpenUsePortal = true;
       };
 
+
       xdg.mimeApps = {
         enable = true;
           defaultApplications = {
             "inode/directory" = "thunar.desktop";
+            "x-scheme-handler/terminal" = "${terminal}.desktop";
           };
       };
 
@@ -68,6 +70,7 @@
         BROWSER = browser;
         TERMINAL = terminal;
       };
+
 
       # Packages that don't require configuration. If you're looking to configure a program see the /modules dir
       home.packages = with pkgs; [
