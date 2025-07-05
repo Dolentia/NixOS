@@ -55,9 +55,12 @@
         enable = true;
           defaultApplications = {
             "inode/directory" = "thunar.desktop";
-            "x-scheme-handler/terminal" = "${terminal}.desktop";
           };
       };
+
+      xdg.exoPreferredApplications = {
+         terminal = "${terminal}.desktop";
+      }
 
       home.username = username;
       home.homeDirectory =
