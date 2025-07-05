@@ -126,7 +126,7 @@
             "${./scripts/batterynotify.sh}" # battery notification
             #"${./scripts/autowaybar.sh}" # uncomment packages at the top
             "polkit-agent-helper-1"
-            "pamixer --set-volume 50 || true"
+            "pamixer --set-volume 50"
           ];
           input = {
             kb_layout = "${kbdLayout},ru";
@@ -375,7 +375,7 @@
               "$mainMod, delete, exit" # kill hyperland session
               "$mainMod, W, togglefloating" # toggle the window on focus to float
               "$mainMod SHIFT, G, togglegroup" # toggle the window on focus to float
-              "$mainMod, SHIFT, F, fullscreen" # toggle the window on focus to fullscreen
+              #"$mainMod, SHIFT, F, fullscreen" # toggle the window on focus to fullscreen
               "$mainMod ALT, L, exec, hyprlock" # lock screen
               "$mainMod, backspace, exec, pkill -x wlogout || wlogout -b 4" # logout menu
               "$CONTROL, ESCAPE, exec, pkill waybar || waybar" # toggle waybar
