@@ -38,6 +38,7 @@
     # ../../modules/programs/media/thunderbird
     # ../../modules/programs/media/obs-studio
     ../../modules/programs/media/mpv
+    ../../modules/programs/media/stremio
     ../../modules/programs/misc/tlp
     ../../modules/programs/misc/thunar
     ../../modules/programs/misc/lact # GPU fan, clock and power configuration
