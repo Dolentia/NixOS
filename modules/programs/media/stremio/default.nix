@@ -1,9 +1,9 @@
 {pkgs, ...}: {
   home-manager.sharedModules = [
     (_: {
-      programs.stremio = {
-        enable = true;
-      };
+      home.packages = with pkgs; [
+        stremio
+      ];
     })
   ];
 }
