@@ -53,7 +53,6 @@
         # pokego # Overlayed
         # krita
         github-desktop
-        docker
         python3
         # gimp
       ];
@@ -86,6 +85,9 @@
       log_level = "error";
     };
   };
+
+  services.docker.enable = true;
+
   users.users.minidlna = {
     extraGroups = ["users"]; # so minidlna can access the files.
   };
