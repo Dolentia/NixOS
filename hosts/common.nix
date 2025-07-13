@@ -303,7 +303,7 @@
   */
 
   # Enable Docker
-  services.docker.enable = true;
+  virtualisation.docker.enable = true;
 
   # Open ports in the firewall.
   # networking.firewall.allowedTCPPorts = [ ... ];
