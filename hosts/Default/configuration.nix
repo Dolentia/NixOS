@@ -53,6 +53,7 @@
         # pokego # Overlayed
         # krita
         github-desktop
+        docker
         python3
         # gimp
       ];
