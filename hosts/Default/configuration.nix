@@ -86,7 +86,6 @@
     };
   };
 
-  services.docker.enable = true;
 
   users.users.minidlna = {
     extraGroups = ["users"]; # so minidlna can access the files.
