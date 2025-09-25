@@ -395,7 +395,7 @@
               "$mainMod, A, exec, pkill -x rofi || ${./scripts/rofi.sh} drun" # launch desktop applications
               "$mainMod, SPACE, exec, pkill -x rofi || ${./scripts/rofi.sh} drun" # launch desktop applications
               "$mainMod, Z, exec, pkill -x rofi || ${./scripts/rofi.sh} emoji" # launch emoji picker
-              # "$mainMod, tab, exec, pkill -x rofi || ${./scripts/rofi.sh} window" # switch between desktop applications
+              "$mainMod, tab, exec, pkill -x rofi || ${./scripts/rofi.sh} window" # switch between desktop applications
               # "$mainMod, R, exec, pkill -x rofi || ${./scripts/rofi.sh} file" # brrwse system files
               "$mainMod ALT, K, exec, ${./scripts/keyboardswitch.sh}" # change keyboard layout
               "$mainMod SHIFT, N, exec, swaync-client -t -sw" # swayNC panel

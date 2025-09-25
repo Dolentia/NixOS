@@ -83,6 +83,7 @@ yad \
   "SUPER ALT K" "Change keyboard layout" "scripts/keyboardswitch.sh" \
   "SUPER U" "Rebuild system" "$_terminal -e scripts/rebuild.sh" \
   "SUPER G" "Game launcher" "scripts/rofi.sh games" \
+  "SUPER TAB" "Window switcher" "scripts/rofi.sh window" \
   "SUPER ALT G" "Enable game mode" "scripts/gamemode.sh" \
   "SUPER V" "Clipboard manager" "scripts/ClipManager.sh" \
   "SUPER M" "Online music" "scripts/rofimusic.sh" \

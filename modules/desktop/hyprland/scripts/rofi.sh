@@ -10,7 +10,7 @@ drun)
   pkill rofi || rofi -show drun -theme-str "$r_override" -theme "$rofi_theme"
   ;;
 window)
-  rofi_theme="${XDG_CONFIG_HOME:-$HOME/.config}/rofi/launchers/type-2/style-2.rasi"
+  rofi_theme="${XDG_CONFIG_HOME:-$HOME/.config}/rofi/launchers/type-3/style-5.rasi"
   r_override="entry{placeholder:'Search Windows...';}listview{lines:9;}"
 
   pkill rofi || rofi -show window -theme-str "$r_override" -theme "$rofi_theme"
